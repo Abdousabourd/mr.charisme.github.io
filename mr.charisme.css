@@ -1,0 +1,635 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url(fonts/roboto-regular-webfont.eot);
+    src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), url(fonts/roboto-regular-webfont.woff2) format('woff2'), url(fonts/roboto-regular-webfont.woff) format('woff'), url(fonts/roboto-regular-webfont.ttf) format('truetype'), url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(fonts/roboto-black-webfont.eot);
+    src: url('fonts/roboto-black-webfont.eot?#iefix') format('embedded-opentype'), url(fonts/roboto-black-webfont.woff2) format('woff2'), url(fonts/roboto-black-webfont.woff) format('woff'), url(fonts/roboto-black-webfont.ttf) format('truetype'), url('fonts/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url(fonts/roboto-medium-webfont.eot);
+    src: url('fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'), url(fonts/roboto-medium-webfont.woff2) format('woff2'), url(fonts/roboto-medium-webfont.woff) format('woff'), url(fonts/roboto-medium-webfont.ttf) format('truetype'), url('fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'robotoregular', "Arial Black", serif
+}
+
+h1 {
+    font-family: 'robotoblack', "Arial Black", serif
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    z-index: 999999;
+    background-color: white;
+    position: fixed;
+    width: 100%
+}
+
+header img {
+    position: relative;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    padding-top: 22px
+}
+
+nav a {
+    text-decoration: none;
+    color: #787878;
+    padding-top: 39px;
+    padding-right: 18px;
+    padding-left: 10px;
+    font-size: .85em;
+    font-family: 'robotomedium', "Arial Black", serif
+}
+
+nav a:hover {
+    border-top: 3px solid #5CADD3;
+    color: #555
+}
+
+#bannière {
+  
+}
+
+#bannière img{ 
+
+    height: 550px;
+    width: 1600px
+}
+
+#fleche_gauche {
+    position: absolute;
+    left: -5px;
+    top: 41%;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px 60px 60px 10px
+}
+
+#fleche_gauche svg {
+    color: white;
+    font-size: 1.25em
+}
+
+#fleche_droite {
+    
+}
+
+#fleche_droite svg {
+    
+}
+
+#description {
+    position: absolute;
+    left: 142px;
+    top: 100px;
+    width: 45%
+}
+
+#description h1 {
+    color: white;
+    font-size: 2.25em;
+    margin: 0
+}
+
+#description span {
+    color: #ff0000;
+    margin-right: 0
+}
+
+#description p {
+    margin-bottom: 70px;
+    color: white;
+    font-weight: 700;
+    font-size: .95em;
+    margin-top: 10px
+    
+}
+
+#description a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff0000;
+    padding: 10px 15px 15px 15px;
+    border-radius: 4px;
+    font-size: 1.15em;
+    border-bottom: 3px solid #ff0000
+}
+
+#timeline {
+    border-bottom: 4px solid #5CADD3;
+    position: absolute;
+    bottom: 0;
+    width: 142px;
+    z-index: 2
+}
+
+#trait_transparant {
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    z-index: 1
+}
+
+#services {
+    position: relative;
+    margin-top: 100px
+}
+
+#titre {
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 186px;
+    text-align: center
+}
+
+.trait {
+    border-bottom: 1px solid #ECECEC;
+    width: 145px
+}
+
+#titre h1 {
+    margin: 15px;
+    font-size: 2.75em
+}
+
+#titre svg {
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    top: 41%
+}
+
+#titre p {
+    color: #676B70;
+    font-size: .95em
+}
+
+svg {
+    color: #5CADD3
+}
+
+#liste_services {
+    display: flex;
+    justify-content: center
+}
+
+article {
+    align-self: flex-end
+}
+
+article ul {
+    list-style-type: none
+}
+
+article li {
+    width: 92.17%
+}
+
+.graphique {
+    border: 1px solid #DEDEDE;
+    border-radius: 50px;
+    padding: 20px;
+    position: relative;
+    top: 15px;
+    float: left;
+    margin-right: 30px
+}
+
+.point {
+    position: absolute;
+    left: 45px;
+    top: 15px;
+    background-color: white;
+    padding: 5px
+}
+
+article h2 {
+    margin-bottom: 5px;
+    font-size: 1.25em;
+    font-family: 'robotoblack', "Arial Black", serif
+}
+
+article p {
+    margin-top: 0;
+    color: #676B70;
+    font-size: .9em
+}
+
+#projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+    height: 166px;
+    text-align: center
+}
+
+#projet h1 {
+    margin: 15px;
+    font-size: 2.75em
+}
+
+#projet p {
+    color: #676B70;
+    font-size: .95em
+}
+
+#projet svg {
+    position: absolute;
+    top: 46.5%;
+    background-color: white;
+    padding: 5px
+}
+
+#portfolio {
+    width: auto;
+    background-color: #F5F5F5;
+    margin-top: 75px
+}
+
+#portfolio ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-left: 0
+}
+
+#menu_portfolio .hover {
+    text-decoration: none;
+    color: #676B70;
+    background-color: #E5E5E5;
+    padding: 10px;
+    font-size: .95em
+}
+
+.container_fleche {
+    height: 28px;
+    position: relative
+}
+
+#debut {
+    border-radius: 5px 0 0 5px;
+    background-color: #5CADD3;
+    color: white;
+    border-bottom: 3px solid #468CAD;
+    padding: 10px 10px 7px 10px;
+    font-size: .95em;
+    text-decoration: none
+}
+
+#fin {
+    border-radius: 0 5px 5px 0
+}
+
+#menu_portfolio a:hover {
+    background-color: #5CADD3;
+    color: white;
+    border-bottom: 3px solid #468CAD;
+    padding-bottom: 7px
+}
+
+.font_flechedefaut {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.font_fleche {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden
+}
+
+.container_fleche svg {
+    position: absolute;
+    bottom: -10px;
+    left: 43.75%;
+    color: #488CAD
+}
+
+.container_fleche:hover .font_fleche {
+    overflow: visible
+}
+
+#images {
+    margin-left: 5%;
+    width: 85%;
+    height: 582px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between
+}
+
+.container_overlay {
+    position: relative;
+    width: 261px
+}
+
+.image_overlay {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .55);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    z-index: 1
+}
+
+.container_overlay:hover .overlay {
+    height: 64px
+}
+
+.text_overlay {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%
+}
+
+.text_overlay h2 {
+    font-size: 17px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: 10px
+}
+
+.text_overlay p {
+    font-size: .7em;
+    margin-top: 0;
+    margin-left: 10px
+}
+
+.overlay_bis svg {
+    right: 24px;
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+    background-color: #5CADD3;
+    padding: 13px;
+    border-radius: 50px;
+    border: 2px solid white
+}
+
+.container_overlay:hover .overlay_bis {
+    height: 100%
+}
+
+.overlay_bis {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    z-index: 2
+}
+
+footer {
+    position: relative;
+    height: 605px
+}
+
+#map {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 100%;
+    background-color: #5CADD3
+}
+
+iframe {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    overflow: hidden;
+    opacity: .6
+}
+
+#formulaire {
+    position: absolute;
+    z-index: 2;
+    right: 150px;
+    top: 20px;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 15px 20px 20px 20px
+}
+
+#formulaire h1 {
+    margin: 0;
+    font-size: 1.55em
+}
+
+#formulaire p {
+    margin-bottom: 20px;
+    margin-top: 0
+}
+
+#formulaire span {
+    border-bottom: 1px dotted black;
+    margin: 0
+}
+
+form div {
+    margin-bottom: 15px
+}
+
+input {
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+    font-size: .875em;
+    font-family: 'robotoregular', "Arial Black", serif;
+    font-weight: 700
+}
+
+textarea {
+    border-radius: 5px;
+    font-family: 'robotoregular', "Arial Black", serif;
+    font-size: .875em;
+    font-weight: 700;
+    padding-left: 10px
+}
+
+#text_message {
+    margin-bottom: 10px
+}
+
+#send_message {
+    background-color: #5CADD3;
+    color: white
+}
+
+@media all and (max-width:980px) {
+    header {
+        top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px
+    }
+
+    nav ul {
+        padding: 0
+    }
+
+    nav a:hover {
+        border-top: 0
+    }
+
+    #bannière {
+        display: none
+    }
+
+    #titre h1 {
+        font-size: 2.6em
+    }
+
+    #titre svg {
+        top: 40%
+    }
+
+    #liste_services {
+        flex-direction: column;
+        align-items: center
+    }
+
+    aside {
+        width: 100%
+    }
+
+    aside img {
+        width: 100%
+    }
+
+    article {
+        align-self: center;
+        width: 100%
+    }
+
+    article li {
+        width: 100%
+    }
+
+    .graphique {
+        padding: 15px
+    }
+
+    .point {
+        left: 35px;
+        top: 10px
+    }
+
+    article p {
+        width: 100%;
+        font-size: .8em
+    }
+
+    #projet h1 {
+        font-size: 2.6em
+    }
+
+    #projet svg {
+        top: 44%
+    }
+
+    #menu_portfolio a {
+        font-size: .9em
+    }
+
+    #images {
+        width: auto;
+        height: auto;
+        margin: auto;
+        justify-content: center
+    }
+
+    .container_overlay {
+        width: 250px;
+        margin: 2%
+    }
+
+    footer {
+        height: 1455px;
+        bottom: 0
+    }
+
+    #map {
+        height: 100%
+    }
+
+    iframe {
+        height: 100%
+    }
+
+    #formulaire {
+        right: 5px;
+        top: 25%;
+        width: 260px
+    }
+
+    input {
+        width: 250px
+    }
+
+    textarea {
+        width: 250px
+    }
+
+    #send_message {
+        width: auto
+    }
+    
+}
