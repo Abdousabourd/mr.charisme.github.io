@@ -473,10 +473,19 @@ iframe {
     font-size: 1.55em
 }
 
-#formulaire p {
+#formulaire p a{
     margin-bottom: 20px;
     margin-top: 0
+    text-decoration: none;
+    color: white;
+    background-color: #ff0000;
+    padding: 10px 15px 15px 15px;
+    border-radius: 4px;
+    font-size: 1.15em;
+    border-bottom: 3px solid #ff0000
+    
 }
+
 
 #formulaire span {
     border-bottom: 1px dotted black;
